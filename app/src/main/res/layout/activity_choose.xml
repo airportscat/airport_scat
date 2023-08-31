@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/choose_tipcat"
+        android:id="@+id/tipCat"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -31,7 +31,7 @@
         android:layout_margin="16dp"
         android:background="@android:color/transparent"
         android:src="@drawable/choose_searchcat"
-        android:id="@+id/choose_searchcat"/>
+        android:id="@+id/searchCat"/>
 
 
 </LinearLayout>
