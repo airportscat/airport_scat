@@ -13,6 +13,16 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:scaleType="fitXY"
-        android:src="@drawable/tip_result_cat" />
+        android:src="@drawable/tip_result" />
+
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="60dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/ectfont"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

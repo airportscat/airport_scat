@@ -10,28 +10,35 @@
 
     <ImageButton
         android:id="@+id/choose_tipcat"
-        android:layout_width="234dp"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
         android:background="@android:color/transparent"
         android:src="@drawable/choose_tipcat" />
 
-    <ImageView
-        android:id="@+id/btnchoose"
-        android:layout_width="451dp"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="choose one!"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:fontFamily="@font/ectfont"
         android:gravity="center"
-        android:src="@drawable/btnchoose" />
+        android:layout_marginBottom="10dp"
+        android:background="#481E91"/>
+
+
+
 
     <ImageButton
-        android:layout_width="346dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/choose_searchcat"
+        android:layout_width="379dp"
+        android:layout_height="350dp"
         android:layout_gravity="center"
         android:layout_margin="16dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/choose_searchcat"
-        android:id="@+id/choose_searchcat"/>
+        android:src="@drawable/choose_searchcat" />
 
 
 </LinearLayout>

@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_choose.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_search_main.xml" value="0.2390625" />
-        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_search_result.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_tip_main.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_tip_result.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/drawable/rounded_button.xml" value="0.1" />
+        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_choose.xml" value="0.2" />
+        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_search_main.xml" value="0.264" />
+        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_search_result.xml" value="0.2" />
+        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_tip_main.xml" value="0.2" />
+        <entry key="..\:/Users/seyeon/AndroidStudioProjects/cat_airplane/app/src/main/res/layout/activity_tip_result.xml" value="0.264" />
       </map>
     </option>
   </component>
