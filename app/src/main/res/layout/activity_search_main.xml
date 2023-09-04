@@ -37,13 +37,11 @@
     <!--돋보기-->
     <ImageButton
         android:id="@+id/search_btn"
-        android:layout_width="83dp"
+        android:layout_width="101dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="308dp"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="30dp"
         android:background="@android:color/transparent"
         android:src="@drawable/search_btn" />
 
@@ -114,7 +112,6 @@
         android:textSize="30dp" />
 
 
-
     <ImageButton
         android:id="@+id/sch_btn4"
         android:layout_width="146dp"
@@ -134,7 +131,6 @@
         android:text="지팡이"
         android:textColor="#191818"
         android:textSize="30dp" />
-
 
 
     <ImageButton
@@ -179,6 +175,18 @@
         android:textColor="#191818"
         android:textSize="30dp" />
 
+    <ImageButton
+        android:id="@+id/btn_lighter"
+        android:layout_width="82dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+       />
 
 
 <!--고양이-->
@@ -191,6 +199,7 @@
         android:layout_marginBottom="-16dp"
         android:gravity="center"
         android:src="@drawable/search_cat" />
+    
 
     <TextView
         android:layout_width="299dp"
