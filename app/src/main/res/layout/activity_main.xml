@@ -11,27 +11,30 @@
     <ImageView
         android:layout_width="450dp"
         android:layout_height="509dp"
-        android:scaleType="fitXY"
         android:layout_gravity="center"
-        android:src="@drawable/imgmain" />
+        android:scaleType="fitXY"
+        android:src="@drawable/img_main" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="공항탐지묘"
+        android:fontFamily="@font/mainfont"
         android:textColor="#3B2A54"
-        android:textSize="70sp"
-        android:textStyle="bold" />
+        android:textSize="60dp" />
 
-    <ImageButton
-        android:id="@+id/btnstart"
-        android:layout_width="234dp"
-        android:layout_height="wrap_content"
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/btnstart"
-        />
+        android:text="start"
+        android:fontFamily="@font/ectfont"
+        android:textSize="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_margin="40dp"
+        android:backgroundTint="#423780"/>
 
 </LinearLayout>

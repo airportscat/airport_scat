@@ -1,54 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
-    <ImageView
+   <ImageView
         android:layout_width="422dp"
         android:layout_height="388dp"
         android:gravity="center"
         android:scaleType="fitXY"
         android:src="@drawable/square" />
 
-    <ImageButton
-        android:id="@+id/see"
-        android:layout_width="231dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="193dp"
-        android:layout_marginTop="115dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/see" />
 
+ <!--이미지 버튼들-->
     <ImageButton
-        android:id="@+id/seat"
+        android:id="@+id/tip_btn1"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="205dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/seat" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/ectfont"
+        android:text="기내식"
+        android:textColor="#191818"
+        android:textSize="30dp" />
+
+
 
     <ImageButton
-        android:id="@+id/airplane_food"
+        android:id="@+id/tip_btn2"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/airplane_food" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/ectfont"
+        android:text="공항음식"
+        android:textColor="#191818"
+        android:textSize="30dp" />
 
     <ImageButton
         android:layout_width="159dp"
@@ -60,7 +67,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/airportfood"
         android:id="@+id/airportfood"
         />
 
@@ -74,55 +80,157 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/ticket"
         android:id="@+id/ticket"/>
 
     <ImageButton
+        android:id="@+id/tip_btn3"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="114dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/homeless"
-        android:id="@+id/homeless"/>
+        android:layout_gravity="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="165dp"
+        android:fontFamily="@font/ectfont"
+        android:text="공항노숙"
+        android:textColor="#191818"
+        android:textSize="30dp" />
+
+
 
     <ImageButton
+        android:id="@+id/tip_btn4"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
         android:layout_width="wrap_content"
-        android:layout_height="79dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/business"
-        android:id="@+id/business"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="225dp"
+        android:fontFamily="@font/ectfont"
+        android:text="비즈니스"
+        android:textColor="#191818"
+        android:textSize="30dp" />
+
+
 
     <ImageButton
-        android:layout_width="198dp"
+        android:id="@+id/tip_btn5"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="198dp"
-        android:layout_marginTop="269dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/peak_season"
-        android:id="@+id/peak_season"/>
+        android:layout_gravity="center"
+        android:layout_marginLeft="239dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/ectfont"
+        android:text="항공권예매"
+        android:textColor="#191818"
+        android:textSize="28dp" />
 
+
+    <ImageButton
+        android:id="@+id/tip_btn6"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="239dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/ectfont"
+        android:text="공항볼거리"
+        android:textColor="#191818"
+        android:textSize="28dp" />
+
+
+
+    <ImageButton
+        android:id="@+id/tip_btn7"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="239dp"
+        android:layout_marginTop="165dp"
+        android:fontFamily="@font/ectfont"
+        android:text="비행기자리"
+        android:textColor="#191818"
+        android:textSize="28dp" />
+
+
+
+    <ImageButton
+        android:id="@+id/tip_btn8"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="237dp"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/ectfont"
+        android:text="비수기성수기"
+        android:textColor="#191818"
+        android:textSize="25dp" />
+
+
+    <!--팁 고양이-->
     <ImageView
-        android:layout_width="403dp"
-        android:layout_height="448dp"
+        android:layout_width="464dp"
+        android:layout_height="504dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="-13dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="-20dp"
+        android:gravity="center"
         android:src="@drawable/tip_cat" />
 
+    <TextView
+        android:layout_width="299dp"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:fontFamily="@font/ectfont"
+        android:gravity="center_horizontal"
+        android:text="공항,비행기 관련 꿀팁이 궁금하면 위에 있는 카테고리에서 찾아봐묘~"
+        android:textColor="#171313"
+        android:textSize="20dp" />
 </RelativeLayout>
