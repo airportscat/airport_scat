@@ -21,11 +21,11 @@ public class tip_main extends AppCompatActivity {
         actionBar.hide();
 
         //findViewById
-        attraction_button = findViewById(R.id.see);
+        attraction_button = findViewById(R.id.attraction);
         seat_button = findViewById(R.id.seat);
-        airline_meal_button = findViewById(R.id.airplane_food);
-        airport_food_button = findViewById(R.id.airportfood);
-        ticket_reservation_button = findViewById(R.id.ticket);
+        airline_meal_button = findViewById(R.id.airline_meal);
+        airport_food_button = findViewById(R.id.airport_food);
+        ticket_reservation_button = findViewById(R.id.ticket_reservation);
         homeless_button = findViewById(R.id.homeless);
         business_button = findViewById(R.id.business);
         peak_season_button = findViewById(R.id.peak_season);
@@ -35,9 +35,9 @@ public class tip_main extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()){
-                    case R.id.see: intent.putExtra("tip","attraction"); break;  //볼거리
+                    case R.id.attraction: intent.putExtra("tip","attraction"); break;  //볼거리
                     case R.id.seat: intent.putExtra("tip","seat"); break;  //비행기 좌석
-                    case R.id.airplane_food: intent.putExtra("tip","airline_meal"); break;  //기내식
+                    case R.id.airline_meal: intent.putExtra("tip","airline_meal"); break;  //기내식
                     case R.id.airportfood: intent.putExtra("tip","airport_food"); break;  //공항 음식
                     case R.id.ticket: intent.putExtra("tip","ticket_reservation"); break;  //항공권 예매
                     case R.id.business: intent.putExtra("tip","business"); break;  //비즈니스
