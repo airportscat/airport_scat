@@ -15,7 +15,7 @@
 
  <!--이미지 버튼들-->
     <ImageButton
-        android:id="@+id/tip_btn1"
+        android:id="@+id/airline_meal"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:layout_marginLeft="35dp"
@@ -23,21 +23,22 @@
         android:background="@drawable/tipbtn"
         android:gravity="center"
         android:padding="10dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="35dp"
-        android:fontFamily="@font/ectfont"
-        android:text="기내식"
-        android:textColor="#191818"
-        android:textSize="30dp" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:layout_marginLeft="70dp"
+     android:layout_marginTop="35dp"
+     android:fontFamily="@font/ectfont"
+     android:text="기내식"
+     android:textColor="#191818"
+     android:textSize="30dp" />
 
 
 
     <ImageButton
-        android:id="@+id/tip_btn2"
+        android:id="@+id/airport_food"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:layout_marginLeft="35dp"
@@ -83,7 +84,7 @@
         android:id="@+id/ticket"/>
 
     <ImageButton
-        android:id="@+id/tip_btn3"
+        android:id="@+id/homeless"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:layout_marginLeft="35dp"
@@ -105,7 +106,7 @@
 
 
     <ImageButton
-        android:id="@+id/tip_btn4"
+        android:id="@+id/business"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:layout_marginLeft="35dp"
@@ -127,7 +128,7 @@
 
 
     <ImageButton
-        android:id="@+id/tip_btn5"
+        android:id="@+id/ticket_reservation"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:layout_marginLeft="230dp"
@@ -148,7 +149,7 @@
 
 
     <ImageButton
-        android:id="@+id/tip_btn6"
+        android:id="@+id/attraction"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:layout_marginLeft="230dp"
@@ -156,21 +157,22 @@
         android:background="@drawable/tipbtn"
         android:gravity="center"
         android:padding="10dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="239dp"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/ectfont"
-        android:text="공항볼거리"
-        android:textColor="#191818"
-        android:textSize="28dp" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:layout_marginLeft="239dp"
+     android:layout_marginTop="100dp"
+     android:fontFamily="@font/ectfont"
+     android:text="공항볼거리"
+     android:textColor="#191818"
+     android:textSize="28dp" />
 
 
 
     <ImageButton
-        android:id="@+id/tip_btn7"
+        android:id="@+id/seat"
         android:layout_width="146dp"
         android:layout_height="45dp"
         android:layout_marginLeft="230dp"
@@ -178,28 +180,28 @@
         android:background="@drawable/tipbtn"
         android:gravity="center"
         android:padding="10dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="239dp"
-        android:layout_marginTop="165dp"
-        android:fontFamily="@font/ectfont"
-        android:text="비행기자리"
-        android:textColor="#191818"
-        android:textSize="28dp" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:layout_marginLeft="239dp"
+     android:layout_marginTop="165dp"
+     android:fontFamily="@font/ectfont"
+     android:text="비행기자리"
+     android:textColor="#191818"
+     android:textSize="28dp" />
 
 
-
-    <ImageButton
-        android:id="@+id/tip_btn8"
-        android:layout_width="146dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="230dp"
-        android:layout_marginTop="220dp"
-        android:background="@drawable/tipbtn"
-        android:gravity="center"
-        android:padding="10dp" />
+ <ImageButton
+     android:id="@+id/peak_season"
+     android:layout_width="146dp"
+     android:layout_height="45dp"
+     android:layout_marginLeft="230dp"
+     android:layout_marginTop="220dp"
+     android:background="@drawable/tipbtn"
+     android:gravity="center"
+     android:padding="10dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
