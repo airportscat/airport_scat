@@ -4,13 +4,21 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class search_main extends AppCompatActivity {
-    ImageButton search_btn,drink;
+    ImageButton search_btn;
+    EditText search;
+    MyDBHelper DB;
+    SQLiteDatabase sqlDB;
+    Cursor result;
+
     private ImageButton[] btn_sample = new ImageButton[6];
     private Integer[] btn_id = {R.id.drink, R.id.charger, R.id.food, R.id.cane, R.id.medicine, R.id.lighter};
     private int i;
@@ -19,12 +27,23 @@ public class search_main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_main);
+        search = findViewById(R.id.search);
+        DB = new MyDBHelper(this);
+        sqlDB = DB.getReadableDatabase();
 
         //타이틀 바 없애기
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+        //검색 버튼
         search_btn = findViewById(R.id.search_btn);
+        search_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result =sqlDB.rawQuery("SELECT * FROM Baggage order by search;", null);
+
+            }
+        });
 
         //버튼 객체 등록
         for (i = 0; i<btn_id.length; i++){
