@@ -24,6 +24,7 @@
 
     <!--검색 글씨 -->
     <EditText
+        android:id="@+id/search"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginStart="15dp"
