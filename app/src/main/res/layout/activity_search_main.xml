@@ -15,41 +15,53 @@
         android:scaleType="fitXY"
         android:src="@drawable/square" />
 
-    <!--검색 박스-->
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="15dp"
-        android:src="@drawable/search_img" />
-
-    <!--검색 글씨 -->
-    <EditText
-        android:id="@+id/search"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@null"
-        android:hint="  검색 : "
-        android:textColor="#706F6F"
-        android:textSize="25dp" />
-
-
-    <!--돋보기-->
-    <ImageButton
-        android:id="@+id/search_btn"
-        android:layout_width="101dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="308dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="15dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/search_btn" />
-
-
     <!--이미지 버튼들 -->
+
+    <ImageButton
+        android:id="@+id/spray"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/txt_spray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ectfont"
+        android:text="스프레이 "
+        android:textColor="#191818"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/ashes"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/tipbtn"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/txt_ashes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ectfont"
+        android:text="유골"
+        android:textColor="#191818"
+        android:textSize="30dp" />
+
+
     <ImageButton
         android:id="@+id/drink"
         android:layout_width="146dp"
@@ -190,7 +202,7 @@
         android:layout_marginBottom="-16dp"
         android:gravity="center"
         android:src="@drawable/search_cat" />
-    
+
 
     <TextView
         android:layout_width="299dp"
