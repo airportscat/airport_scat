@@ -24,7 +24,6 @@ public class search_result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_result);
 
-        search = findViewById(R.id.search);
         search_result = findViewById(R.id.search_result);
 
         //타이틀 바 없애기
