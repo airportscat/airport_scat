@@ -22,6 +22,8 @@ import java.io.InputStream;
 
 public class search_result extends AppCompatActivity {
     TextView search_result;
+    Intent intent;
+    String baggage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,22 +31,22 @@ public class search_result extends AppCompatActivity {
         setContentView(R.layout.activity_search_result);
 
         search_result = findViewById(R.id.search_result);
-        Data d = new Data();
 
         //타이틀 바 없애기
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        String testData = "drink.txt";
-        String filePath = getFilesDir() + "/" + testData; // 내부 저장소의 파일 경로
+        intent = getIntent();
+        baggage = intent.getExtras().getString("baggage"); //메인에서 받아온 키 값으로 데이터 불러오기
+
         try{
-            InputStream input = getResources().openRawResource(R.raw.);
+            InputStream input = getResources().openRawResource(baggage);  //아이디좀받아와주라...
             byte[] txt = new byte[input.available()];
             input.read(txt);
-
-
-            String text = new String();
+            String text = new String(txt);
             search_result.setText(text);
+            input.close();
+
             Toast.makeText(getApplicationContext(), "불러오기 성공", Toast.LENGTH_SHORT).show();
         } catch (IOException e) {
             e.printStackTrace();

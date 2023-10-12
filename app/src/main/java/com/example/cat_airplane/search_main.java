@@ -31,13 +31,20 @@ public class search_main extends AppCompatActivity {
         for (i = 0; i<btn_id.length; i++){
             btn_sample[i] = (ImageButton) findViewById(btn_id[i]);
         }
+
+        //화면 넘기기위한 intent 객체 생성
+        Intent intent = new Intent(search_main.this, search_result.class);
+
         //버튼 이벤트 넣기
         for (i = 0; i<btn_sample.length; i++){
             btn_sample[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent in = new Intent(search_main.this, search_result.class);
-                    startActivity(in);
+                    switch (i){
+                        case 1:
+                            intent.putExtra("baggage", R.raw.cane); break;
+                    }
+                    startActivity(intent);
                 }
             });
 

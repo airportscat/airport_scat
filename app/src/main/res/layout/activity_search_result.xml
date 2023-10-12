@@ -13,7 +13,7 @@
         android:layout_height="714dp"
         android:gravity="center"
         android:scaleType="fitXY"
-        android:src="@drawable/search_result"/>
+        android:src="@drawable/search_result" />
 
     <TextView
         android:id="@+id/search_result"
