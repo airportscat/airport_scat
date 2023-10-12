@@ -35,22 +35,6 @@ public class search_main extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        //검색 버튼
-        search_btn = findViewById(R.id.search_btn);
-        search_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sqlDB = dbHelper.getReadableDatabase(); //db읽기
-                result =sqlDB.rawQuery("SELECT * FROM Baggage;", null); //db검색
-                if(result.getCount()>0){
-                    Intent intent = new Intent(search_main.this, search_result.class);
-                    startActivity(intent);
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "해당 정보는 확인할 수 없습니다.", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
         //버튼 객체 등록
         for (i = 0; i<btn_id.length; i++){

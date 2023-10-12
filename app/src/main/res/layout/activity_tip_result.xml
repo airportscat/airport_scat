@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,13 +15,20 @@
         android:src="@drawable/tip_result" />
 
     <TextView
-        android:id="@+id/tip_result"
+        android:id="@+id/tipText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="60dp"
-        android:textSize="24dp"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:color="#000000"
         android:fontFamily="@font/ectfont"
-        android:textColor="#FFFFFF" />
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ectfont" />
 
 </RelativeLayout>
