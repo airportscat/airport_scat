@@ -11,13 +11,17 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class search_result extends AppCompatActivity {
-    Cursor cursor;
-    SQLiteDatabase sqlDB;
-    EditText search;
     TextView search_result;
-    MyDBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,30 +29,26 @@ public class search_result extends AppCompatActivity {
         setContentView(R.layout.activity_search_result);
 
         search_result = findViewById(R.id.search_result);
+        Data d = new Data();
 
         //타이틀 바 없애기
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        dbHelper = new MyDBHelper(this);
+        String testData = "drink.txt";
+        String filePath = getFilesDir() + "/" + testData; // 내부 저장소의 파일 경로
+        try{
+            InputStream input = getResources().openRawResource(R.raw.);
+            byte[] txt = new byte[input.available()];
+            input.read(txt);
 
-        //전달한 데이터 아이디 받기
-        int dataId = getIntent().getIntExtra("dataId", -1);
 
-        if (dataId != -1) {
-            // 데이터 조회
-            SQLiteDatabase db = dbHelper.getReadableDatabase();
-            Cursor cursor = db.rawQuery("SELECT * FROM Baggage WHERE mID = ?;", new String[]{String.valueOf(dataId)});
-        }
-
-        //텍스트화
-        if(cursor.moveToFirst()){
-            String name = cursor.getString(1); //name
-            String result = cursor.getString(2); //result
-
-            search_result.setText(name);
-            //result textview 만들어서 텍스트 넣기
-
+            String text = new String(line);
+            search_result.setText(text);
+            Toast.makeText(getApplicationContext(), "불러오기 성공", Toast.LENGTH_SHORT).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "파일 없음", Toast.LENGTH_SHORT).show();
         }
     }
 }
