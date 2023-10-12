@@ -19,7 +19,7 @@ public class search_main extends AppCompatActivity {
     Cursor result; //테이블에 저장된 행을 참조해 데이터의 값을 가져오는 것
 
     private ImageButton[] btn_sample = new ImageButton[6];
-    private Integer[] btn_id = {R.id.drink, R.id.charger, R.id.food, R.id.cane, R.id.medicine, R.id.lighter};
+    private Integer[] btn_id = {R.id.drink, R.id.charger, R.id.food, R.id.cane, R.id.medicine, R.id.lighter, R.id.txt_ashes, R.id.spray};
     private int i;
 
     @Override
@@ -31,10 +31,6 @@ public class search_main extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f6064f67c5a254b7f02fd0d76688da2d92995f01
         //버튼 객체 등록
         for (i = 0; i<btn_id.length; i++){
             btn_sample[i] = (ImageButton) findViewById(btn_id[i]);

@@ -37,18 +37,18 @@ public class search_result extends AppCompatActivity {
 
         String testData = "drink.txt";
         String filePath = getFilesDir() + "/" + testData; // 내부 저장소의 파일 경로
-        try{
-            InputStream input = getResources().openRawResource(R.raw.);
-            byte[] txt = new byte[input.available()];
-            input.read(txt);
-
-
-            String text = new String(line);
-            search_result.setText(text);
-            Toast.makeText(getApplicationContext(), "불러오기 성공", Toast.LENGTH_SHORT).show();
-        } catch (IOException e) {
-            e.printStackTrace();
-            Toast.makeText(getApplicationContext(), "파일 없음", Toast.LENGTH_SHORT).show();
-        }
+//        try{
+//            InputStream input = getResources().openRawResource(R.raw.);
+//            byte[] txt = new byte[input.available()];
+//            input.read(txt);
+//
+//
+//            String text = new String();
+//            search_result.setText(text);
+//            Toast.makeText(getApplicationContext(), "불러오기 성공", Toast.LENGTH_SHORT).show();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            Toast.makeText(getApplicationContext(), "파일 없음", Toast.LENGTH_SHORT).show();
+//        }
     }
 }
