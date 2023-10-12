@@ -31,6 +31,10 @@ public class search_main extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f6064f67c5a254b7f02fd0d76688da2d92995f01
         //버튼 객체 등록
         for (i = 0; i<btn_id.length; i++){
             btn_sample[i] = (ImageButton) findViewById(btn_id[i]);

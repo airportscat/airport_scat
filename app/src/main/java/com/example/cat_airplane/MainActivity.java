@@ -16,12 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //타이틀 바 없애기
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-      btnstart = findViewById(R.id.start_btn);
+        btnstart = findViewById(R.id.start_btn);
 
         btnstart.setOnClickListener(new View.OnClickListener() {
             @Override
