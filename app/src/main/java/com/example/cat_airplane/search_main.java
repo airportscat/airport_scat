@@ -14,12 +14,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class search_main extends AppCompatActivity {
-    ImageButton search_btn;
-    SQLiteDatabase sqlDB;
-    Cursor result; //테이블에 저장된 행을 참조해 데이터의 값을 가져오는 것
-
-    private ImageButton[] btn_sample = new ImageButton[6];
-    private Integer[] btn_id = {R.id.drink, R.id.charger, R.id.food, R.id.cane, R.id.medicine, R.id.lighter, R.id.txt_ashes, R.id.spray};
+    private ImageButton[] btn_sample = new ImageButton[8];
+    private Integer[] btn_id = {R.id.drink, R.id.charger, R.id.food, R.id.cane, R.id.medicine, R.id.lighter, R.id.ashes, R.id.spray};
     private int i;
 
     @Override
