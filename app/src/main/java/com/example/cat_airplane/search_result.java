@@ -18,9 +18,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class search_result extends AppCompatActivity {
-    EditText search;
     TextView search_result;
 
     @Override
@@ -28,7 +28,6 @@ public class search_result extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_result);
 
-        search = findViewById(R.id.search);
         search_result = findViewById(R.id.search_result);
         Data d = new Data();
 
@@ -36,21 +35,14 @@ public class search_result extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        String testData = "file.txt";
+        String testData = "drink.txt";
         String filePath = getFilesDir() + "/" + testData; // 내부 저장소의 파일 경로
         try{
-            FileInputStream in = openFileInput(testData);
-            byte[] line = new byte[30];
-            in.read(line);
-            in.close();
-//            BufferedReader reader = new BufferedReader(new FileReader(testData));
-//            StringBuilder content = new StringBuilder();
-//            String line;
-//            while((line=reader.readLine()) != null){
-//                content.append(line).append("\n");
-//            }
-//            reader.close();
-//
+            InputStream input = getResources().openRawResource(R.raw.);
+            byte[] txt = new byte[input.available()];
+            input.read(txt);
+
+
             String text = new String(line);
             search_result.setText(text);
             Toast.makeText(getApplicationContext(), "불러오기 성공", Toast.LENGTH_SHORT).show();
