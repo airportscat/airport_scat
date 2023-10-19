@@ -24,6 +24,7 @@
         android:layout_marginTop="60dp"
         android:textSize="24dp"
         android:fontFamily="@font/ectfont"
-        android:textColor="#FFFFFF" />
+        android:text="공항음식"
+        android:textColor="#000000" />
 
 </RelativeLayout>
