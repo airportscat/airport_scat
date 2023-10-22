@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -70,5 +72,20 @@ public class tip_result extends AppCompatActivity {
 
         // 리스트뷰에 어댑터 설정
         listView.setAdapter(adapter);
+
+        // 리스트뷰 항목 클릭 리스너 설정
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                // 클릭한 항목을 가져옴
+                String selectedItem = (String) adapterView.getItemAtPosition(position);
+
+                // 다음 화면으로 전달할 정보를 담은 인텐트 생성
+                Intent detailIntent = new Intent(tip_result.this, TipDetailActivity.class);
+                detailIntent.putExtra("title", selectedItem);
+                detailIntent.putExtra("tip", tipType);
+                startActivity(detailIntent);
+            }
+        });
     }
 }
