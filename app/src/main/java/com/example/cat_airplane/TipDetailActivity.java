@@ -42,6 +42,7 @@ public class TipDetailActivity extends AppCompatActivity {
             boolean foundTitle = false;
             // "/"로 텍스트를 나누어 리스트에 추가
             while ((line = reader.readLine()) != null) {
+                Log.d("씨발아 타이틀", ": "+title);
                 if(title.equals(line)) {
                     foundTitle = true;
                     continue;

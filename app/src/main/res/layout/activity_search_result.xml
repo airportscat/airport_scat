@@ -13,16 +13,18 @@
         android:layout_height="714dp"
         android:gravity="center"
         android:scaleType="fitXY"
-        android:src="@drawable/search_result"/>
+        android:src="@drawable/search_result" />
 
     <TextView
         android:id="@+id/search_result"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="60dp"
         android:textSize="24dp"
         android:fontFamily="@font/ectfont"
-        android:textColor="#FFFFFF" />
+        android:text="공항음식"
+        android:textColor="#000000" />
 
 </RelativeLayout>

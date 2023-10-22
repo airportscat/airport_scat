@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class tip_main extends AppCompatActivity {
+public class  tip_main extends AppCompatActivity {
     ImageButton attraction_button, seat_button,airline_meal_button, airport_food_button,ticket_reservation_button,homeless_button,
             business_button,peak_season_button;
     @Override
