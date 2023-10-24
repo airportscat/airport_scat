@@ -46,7 +46,7 @@ public class search_result extends AppCompatActivity {
             InputStreamReader reader = new InputStreamReader(input);
             BufferedReader bufferedReader = new BufferedReader(reader);
             StringBuilder content = new StringBuilder();
-            
+
             //한줄씩 불러오기
             String line;
             while ((line = bufferedReader.readLine()) != null) {
