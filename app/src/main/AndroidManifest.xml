@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cat_airplane">
         <activity
+            android:name=".TipDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".tip_result"
             android:exported="false" />
         <activity
