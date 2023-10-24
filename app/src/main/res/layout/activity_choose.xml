@@ -28,9 +28,6 @@
         android:layout_marginBottom="10dp"
         android:background="#481E91"/>
 
-
-
-
     <ImageButton
         android:id="@+id/searchCat"
         android:layout_width="379dp"
