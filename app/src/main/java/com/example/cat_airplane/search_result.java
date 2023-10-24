@@ -42,30 +42,27 @@ public class search_result extends AppCompatActivity {
         baggage = intent.getExtras().getInt("baggage");
 
         try {
-            // 데이터 파일 불러오기
-//            InputStream inputStream = getAssets().open(baggage+".txt");
-//            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-//
-//            StringBuilder stringBuilder = new StringBuilder();
-//            String line;
-//
-//            //데이터 읽기
-//            while ((line = reader.readLine()) != null) {
-//                stringBuilder.append(line).append("\n");
-//            }
-//            reader.close();
             InputStream input = getResources().openRawResource(baggage);
-            byte[] txt = new byte[input.available()];
-            input.read(txt);
+            InputStreamReader reader = new InputStreamReader(input);
+            BufferedReader bufferedReader = new BufferedReader(reader);
+            StringBuilder content = new StringBuilder();
+            
+            //한줄씩 불러오기
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                content.append(line);
+            }
             input.close();
 
+            //텍스트 변환
+            String contentText = content.toString();
+            //텍스트 출력
+            search_result.setText(contentText);
+            
             Toast.makeText(getApplicationContext(), "불러오기 성공", Toast.LENGTH_SHORT).show();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        //화면에 텍스트 데이터 보이기
-        search_result.setText(baggage);
     }
 }

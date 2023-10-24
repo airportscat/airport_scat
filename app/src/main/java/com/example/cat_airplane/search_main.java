@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 public class search_main extends AppCompatActivity {
     private ImageButton btn_spary, btn_ashes, btn_drink, btn_cane, btn_charger, btn_medicine, btn_food, btn_lighter;
-    private int i;
     Intent intent;
 
     @Override
@@ -46,8 +45,7 @@ public class search_main extends AppCompatActivity {
                 switch (v.getId()) {
                     case R.id.spray:
                         //스프레이
-                        intent.putExtra("baggage", R.raw.spray);
-                        break;
+                        intent.putExtra("baggage", R.raw.spray); break;
                     case R.id.ashes:
                         //유골
                         intent.putExtra("baggage", R.raw.ashes); break;
