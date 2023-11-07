@@ -59,7 +59,7 @@ public class search_result extends AppCompatActivity {
             //텍스트 출력
             search_result.setText(contentText);
             
-            Toast.makeText(getApplicationContext(), "불러오기 성공", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "정보 불러왔다냥", Toast.LENGTH_SHORT).show();
 
         } catch (IOException e) {
             e.printStackTrace();
